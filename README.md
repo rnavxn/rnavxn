@@ -3,7 +3,7 @@
 Final-year IT engineering student building backend systems with Java, Spring Boot, and PostgreSQL.  
 Focused on scalability, concurrency, and systems design.
 
----
+
 
 ## Current Projects
 
@@ -11,7 +11,7 @@ Focused on scalability, concurrency, and systems design.
 
 - **[mass-campaign-manager](https://github.com/rnavxn/mass-campaign-manager)** — Multi-channel campaign engine (Email/SMS) with async job processing, chunk-based parallelism, and real-time Grafana observability.
 
----
+
 
 ## Tech Stack
 
@@ -20,7 +20,7 @@ Focused on scalability, concurrency, and systems design.
 **Observability:** Prometheus, Grafana, Micrometer  
 **DevOps:** Docker Compose, GitHub Actions  
 
----
+
 
 ## Currently Learning
 
@@ -28,8 +28,9 @@ Focused on scalability, concurrency, and systems design.
 - AWS fundamentals (EC2, RDS, Lambda, S3)
 - System design patterns and distributed architectures
 
----
+
 
 ## Get in touch
 
-**[rnavxn@gmail.com](mailto:rnavxn@gmail.com)** | **[GitHub](https://github.com/rnavxn)** | **[LinkedIn](https://linkedin.com/in/rnavxn)**
+📧 **[rnavxn@gmail.com](mailto:rnavxn@gmail.com)** | 🐙 **[GitHub](https://github.com/rnavxn)** | 💼 **[LinkedIn](https://linkedin.com/in/rnavxn)** \
+📄 **[Resume](https://drive.google.com/file/d/1OLhE1eS6A8kdVegAaPJG11P7nmZCienv/view)**
