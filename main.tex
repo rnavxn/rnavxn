@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Navin R} \\ \vspace{1pt}
+    \small +91 6374504931 $|$ \href{mailto:rnavxn@gmail.com}{\underline{rnavxn@gmail.com}} $|$ 
+    \href{https://github.com/rnavxn}{\underline{github.com/rnavxn}} $|$
+    \href{https://linkedin.com/in/rnavxn}{\underline{linkedin.com/in/rnavxn}} $|$
+    \small Coimbatore
+\end{center}
+
+
+% Professional Summary
+\section{Professional Summary}
+    % \vspace{5pt}
+    \small{Information Technology student specializing in backend systems, distributed processing, and concurrency using Java and Spring Boot. Built fault-tolerant applications with retry pipelines, recovery services, and scalable asynchronous workflows.}
+    % \vspace{5pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C++, SQL, Solidity} \\
+     \textbf{Frameworks}{: Spring Boot, React} \\
+     \textbf{Developer Tools}{: Git, Docker, Docker Compose, Maven} \\
+     \textbf{Databases}{: MySQL, MariaDB, PostgreSQL, Redis} \\
+     \textbf{Monitoring}{: Prometheus, Grafana, Micrometer} \\     
+     \textbf{Operating System}{: Linux (Arch, Debian)} \\
+     \textbf{Core CS}{: Data Structures \& Algorithms, OOP, Distributed Systems,
+         Concurrency \& Multi-threading, Blockchain Fundamentals}
+    }}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      
+      % --- MASS CAMPAIGN MANAGER ---
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/rnavxn/mass-campaign-manager}{Mass Campaign Manager}} $|$ \emph{Spring Boot, React, PostgreSQL, Docker}}{May - June 2026}
+        \resumeItemListStart
+          \resumeItem{Architected a distributed campaign orchestrator handling 1M+ recipient workloads by delegating execution to a custom-built, decoupled worker microservice (Distributed Job Processor)}
+          \resumeItem{Engineered a high-throughput data ingestion pipeline using chunked CSV streaming and 5K-batched PostgreSQL inserts to prevent JVM memory exhaustion during massive uploads}
+          \resumeItem{Applied pessimistic write locking to safely serialize 200+ concurrent webhook callbacks, guaranteeing accurate cumulative execution states without data races}
+          \resumeItem{Eliminated HTTP thread blocking via asynchronous CompletableFuture background processing, allowing the API to return 202 Accepted in milliseconds}
+          \resumeItem{Designed idempotent failure recovery to re-process only incomplete chunks without duplication, monitored via a real-time React telemetry dashboard}
+        \resumeItemListEnd
+
+      % --- DISTRIBUTED JOB PROCESSOR ---
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/rnavxn/dist-job-processor}{Distributed Job Processor}} $|$ \emph{Spring Boot, Redis, PostgreSQL, Docker, Grafana}}{Mar. -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Engineered a fault-tolerant distributed task queue processing jobs across multiple worker containers with at-least-once delivery guarantees}
+            \resumeItem{Implemented atomic job claiming via Redis BLMOVE and distributed locks to prevent duplicate execution across concurrent workers}
+            \resumeItem{Built an exponential backoff retry pipeline (10s$\to$20s$\to$40s) with a dead-letter queue, alongside Reaper and Reconciliation services for automated crash recovery}
+            \resumeItem{Containerized the multi-node architecture via Docker Compose, instrumenting 13 custom Micrometer metrics to Prometheus and Grafana for live queue depth and throughput telemetry}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sri Krishna College of Technology}{Coimbatore, TN} {Bachelor of Technology in Information Technology | \textbf{GPA: 7.83/10}} {Expected Sep. 2027}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \resumeItemListStart
+        \resumeItem{Engineered a standalone, reusable distributed worker node architecture, fully documented and MIT-licensed for public use}
+        \resumeItem{Solved 240+ algorithmic challenges on LeetCode, specializing in dynamic programming, graph theory, and advanced data structures}
+        \resumeItem{Completed Google Git \& GitHub Professional Certificate on Coursera}
+        \resumeItem{Earned Java certification from HackerRank}
+    \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
